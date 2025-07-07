@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🐜 Enhanced Ant Smasher</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="bg-particles" id="bgParticles"></div>
+
+    <div class="game-container">
+      <div class="game-header">
+        <h1 class="game-title">🐜 Ant Smasher Elite</h1>
+        <div class="stats-container">
+          <div class="score-box">
+            <div class="score-label">SCORE</div>
+            <div class="score-value">0</div>
+          </div>
+          <div class="high-score-box">
+            <div class="high-score-label">HIGH SCORE</div>
+            <div class="high-score-value">0</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="instructions">
+        🎯 Click on the ants as fast as you can! Each ant is worth 10 points.
+        You have 60 seconds!
+      </div>
+
+      <div class="game-area" id="gameArea">
+        <div class="time-remaining" id="timeRemaining">60s</div>
+        <div class="game-message" id="gameMessage">
+          <div>🎉 Game Over! 🎉</div>
+          <div class="final-score">Score: <span id="finalScore">0</span></div>
+          <button class="btn" id="playAgainBtn">Play Again</button>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="btn" id="restartBtn">🔄 Restart Game</button>
+        <button class="btn" id="pauseBtn">⏸️ Pause</button>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
