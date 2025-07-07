@@ -50,7 +50,7 @@ body {
 
 .game-container {
     width: 100%;
-    
+
     max-width: 900px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
@@ -525,4 +525,15 @@ body {
         flex-direction: column;
         align-items: center;
     }
+}
+
+#quitBtn {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    box-shadow: 0 2px 8px #e74c3c44;
+}
+
+#quitBtn:hover {
+    background: #c0392b;
 }

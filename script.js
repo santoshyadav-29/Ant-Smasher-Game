@@ -256,6 +256,21 @@ document.addEventListener("DOMContentLoaded", () => {
     initGame();
   });
 
+  const quitBtn = document.getElementById("quitBtn");
+
+  quitBtn.addEventListener("click", () => {
+    buttonSound.currentTime = 0;
+    buttonSound.play();
+    gameActive = false;
+    gamePaused = false;
+    clearInterval(gameTimer);
+    ants.forEach((ant) => ant.remove());
+    ants = [];
+    gameMessage.classList.add("game-over");
+    gameMessage.querySelector("div").textContent = "👋 You quit the game!";
+    finalScore.textContent = score;
+  });
+
   // Initialize high score display
   highScoreValue.textContent = highScore;
 
